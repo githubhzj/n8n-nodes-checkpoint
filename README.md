@@ -32,11 +32,11 @@ docker cp n8n-nodes-checkpoint n8n:/home/node/.n8n/custom/
 5. 重启n8n容器服务 docker restart n8n
 6. 在前端创建workflow 添加node搜索checkpoint
 7. 添加防火墙认证信息
-8. 选择动作填写信息测试
-如果需要进入容器内部查看文件：
-docker exec -it n8n sh
-cd .n8n/custom 进入自定义目录
-ls 查看
+8. 选择动作填写信息测试  
+如果需要进入容器内部查看文件：  
+docker exec -it n8n sh  
+cd .n8n/custom 进入自定义目录  
+ls 查看  
 
 ## 依赖
 - axios
