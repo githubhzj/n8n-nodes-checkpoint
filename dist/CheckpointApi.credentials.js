@@ -5,6 +5,7 @@ class CheckpointApi {
     constructor() {
         this.name = 'checkpointApi';
         this.displayName = 'Checkpoint API';
+        this.icon = { light: 'file:icon.svg', dark: 'file:icon.dark.svg' };
         this.documentationUrl = '';
         this.properties = [
             {

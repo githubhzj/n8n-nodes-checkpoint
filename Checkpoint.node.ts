@@ -14,6 +14,7 @@ export class Checkpoint implements INodeType {
     },
     inputs: ['main'],
     outputs: ['main'],
+    usableAsTool: true,
     credentials: [
       {
         name: 'checkpointApi',

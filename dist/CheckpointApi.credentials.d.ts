@@ -1,7 +1,8 @@
-import { ICredentialType, INodeProperties } from 'n8n-workflow';
+import { ICredentialType, INodeProperties, Icon } from 'n8n-workflow';
 export declare class CheckpointApi implements ICredentialType {
     name: string;
     displayName: string;
+    icon: Icon;
     documentationUrl: string;
     properties: INodeProperties[];
 }

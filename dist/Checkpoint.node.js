@@ -19,6 +19,7 @@ class Checkpoint {
             },
             inputs: ['main'],
             outputs: ['main'],
+            usableAsTool: true,
             credentials: [
                 {
                     name: 'checkpointApi',
