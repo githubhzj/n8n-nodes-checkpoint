@@ -1,0 +1,29 @@
+# Checkpoint Policy n8n自定义节点
+
+本目录为n8n自定义节点插件，支持在Checkpoint防火墙上自动创建安全策略。
+
+## 目录结构
+- package.json                // npm包描述
+- tsconfig.json               // TypeScript配置
+- .eslintrc.js                // ESLint配置
+- README.md                   // 使用说明
+- Checkpoint.node.ts    // 节点主逻辑
+- CheckpointApi.credentials.ts// 认证参数定义
+- index.ts                    // 节点与认证导出
+- icon.svg                // 图标
+- icon.dark.svg           // 深色模式
+
+## 安装与使用
+1. 在本目录下执行 `npm install` 安装依赖。
+2. 执行 `npm run build` 编译TypeScript。
+3. 将本目录作为自定义节点目录，配置到n8n本地或服务器。
+4. 在n8n UI中配置Checkpoint API认证参数。
+5. 拖入“Checkpoint”节点，填写目标IP，运行即可。
+
+## 依赖
+- axios
+- n8n-workflow
+
+## 注意事项
+- 需保证n8n服务器能访问Checkpoint防火墙API。
+- 仅支持“创建策略”功能。

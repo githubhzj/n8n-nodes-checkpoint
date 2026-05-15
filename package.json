@@ -1,0 +1,23 @@
+{
+  "name": "n8n-nodes-checkpoint",
+  "version": "0.1.0",
+  "description": "n8n自定义节点：创建Checkpoint防火墙安全策略",
+  "main": "dist/CheckpointPolicy.node.js",
+  "types": "dist/CheckpointPolicy.node.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "lint": "eslint . --ext .ts"
+  },
+  "keywords": ["n8n", "checkpoint", "firewall", "policy", "node"],
+  "author": "enghz",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.6.0",
+    "n8n-workflow": "^1.43.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0",
+    "eslint": "^8.0.0"
+  }
+}
